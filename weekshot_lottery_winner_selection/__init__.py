@@ -3,7 +3,8 @@ import httpx
 async def generate_random_numbers(
     api_key: str,
     max_number: int,
-    count: int
+    count: int,
+    unique: bool = True,
 ) -> list[int]:
     url = f"https://api.random.org/json-rpc/2/invoke"
     headers = {
@@ -17,7 +18,7 @@ async def generate_random_numbers(
             "n": count,
             "min": 1,
             "max": max_number,
-            "replacement": True
+            "replacement": not unique
         },
         "id": 1
     }

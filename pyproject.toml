@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "weekshot-lottery-winner-selection"
-version = "0.1.1"
+version = "0.1.2"
 description = "Weekshot Lottery Winner Selection"
 authors = ["Pavel Fedorovich <pa.fedorovich@heapix.com>"]
 readme = "README.md"
