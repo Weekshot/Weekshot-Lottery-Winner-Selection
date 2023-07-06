@@ -6,6 +6,16 @@ async def generate_random_numbers(
     count: int,
     unique: bool = True,
 ) -> list[int]:
+    """
+    Generate random numbers from 1 to `max_number`
+
+    :param `api_key`: Random.org API key
+    :param `max_number`: Max number of random numbers
+    :param `count`: Count of random numbers
+    :param `unique`: Unique random numbers, default is True
+    :return: List of random numbers
+    """
+        
     url = f"https://api.random.org/json-rpc/2/invoke"
     headers = {
         "Content-Type": "application/json"
